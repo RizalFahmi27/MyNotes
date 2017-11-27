@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Multi Note</string>
+
+
+    <!-- Login Activity -->
+    <string name="text_sign_in_error">Sign in failed errorCode = </string>
+    <string name="text_are_you_sure_logout">Are you sure to logout?</string>
+
+
+    <!-- Main Activity -->
+    <!-- ================================================================================================== -->
+    <!-- Contact List Fragment -->
+    <string name="text_active_debt">Active debt : </string>
+    <string name="text_number_of_notes">Notes : </string>
+
+    <!-- Global use -->
+    <string name="text_confirm">Confirm</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_please_wait">Please wait....</string>
+    <string name="text_loading_progress">Loading....</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lynx.github.multinote.login.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_bgLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_login"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/button_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:id="@+id/container_progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:background="@color/colorWhite">
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:indeterminate="true"
+                    app:cpb_color="@color/colorPrimary"
+                    app:cpb_sweep_speed="1.0"
+                    app:cpb_stroke_width="3.5dp"
+                    app:cpb_rotation_speed="1.0"
+                    android:layout_gravity="center"
+                    app:cpb_max_sweep_angle="300"
+                    app:cpb_min_sweep_angle="10" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
